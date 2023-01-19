@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>MyProfile</title>
+
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/24b0728e28.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+    <div class="backdrop"> </div>
+        <header>
+            <div id="main-Header">
+                <div>
+                    <img id="linkedin-Logo" class="item-Header" src="images/linkedin.png">
+                    <div class="search-Box">
+                    <form action="#" target="_self">
+                    <i class="fa fa-search icon-Search item-Header"></i>
+                    <input type="search" id="search" placeholder="Search" class="item-Header">
+                    </form>
+                    </div>
+                <div class="nav-Link">
+                <nav id="nav-Header">
+                    <ul>
+                        <li id="home" class="li-nav item-Header"><a href="#"><i class="fa fa-home"></i><br><span>home</span>
+                        </a>
+                        </li>
+                        <li id="networks" class="li-nav item-Header">
+                            <a href="#"><i class="fa fa-users"></i><br><span>mynetwork</span></a>
+                        </li>
+                        <li id="jobs" class="li-nav item-Header">
+                            <a href="#"><i class="fa fa-shopping-bag"></i><br><span>jobs</span></a>
+                        </li>
+                        <li id="messaging" class="li-nav item-Header">
+                            <a href="#"><i class="fa fa-envelope"></i><br><span>messaging</span></a>
+                        </li>
+                        <li id="notification" class="li-nav item-Header">
+                            <a href="#"><i class="fa fa-bell"></i><br><span>notification</span></a>
+                        </li>
+
+                        <li id="my-Account" class="li-nav item-Header" style="display: flex; align-items: center;">
+                           <button class="my-Account-btn "><img src="images/user.png" alt="myPicture"><br> Me<i class="fas fa-angle-down"></i></button>
+                           <div class="myAccount-de"><a href="#">myFriends</a><br><a href="#">Messages</a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+        <section id="container">
+            <main class="main-Page">
+                    <div class="background-Profile">
+                        <button style="display: inline-flex;" class="btn-Camera"><input type="image" class="camera" src="images/camera.png"></button> 
+                    </div>
+                    <div class="information-me">
+                        <p>my Name</p> <br>
+                        <p>sample country</p>
+                    </div>
+
+
+                    <div class="about-Me">
+                        <p>About</p>
+                        <div class="edit-Remove-Btn">
+                            <button class="edit-Aboutme btn-E"><i class="fa fa-edit"></i></button>
+                            </div>
+                        <div class="edite-About-Me"><p>Please enter your information</p>
+                            <textarea name="" class="textAbout"></textarea><button class="save-About-Box btn-E">save</button><button class="close-About-Box btn-E">close</button></div>
+                        
+                    </div>
+                    <div class="education-Me educ-skill-lang">
+                        <p>Education</p>
+                        <div class="edit-Remove-Btn">
+                        <button class="edit-Education btn-E"><i class="fa fa-edit"></i></button>
+                        </div>
+                        <div class="edite-Education">
+                            <p>Please enter your information</p>
+                            <input type="text" name="name university" placeholder="name your university " class="text university">
+                            <input type="text" name="your major" placeholder="your major " class="text major">
+                            <button class="save-Edu-Box btn-E">save</button><button class="close-Edu-Box btn-E">close</button></div>
+                       </div>
+                    <div class="skills educ-skill-lang">
+                        <p>Skills</p>
+                        <div class="edit-Remove-Btn">
+                        <button class="edit-Skills btn-E"><i class="fa fa-edit"></i></button>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div class="Languages educ-skill-lang">
+                        <p>Languages</p>
+                        <div class="edit-Lang">
+                            <button class="btn-l btn-la " value="English">English</button>
+                            <button class="btn-l btn-fa " value="Persian">Persian</button>
+                            <button class="btn-l btn-del" >Delete</button>
+                            <button class="close-l btn-E">close</button>
+                        </div>
+                        <div class="edit-Remove-Btn">
+                        <button class="edit-Languages btn-E"><i class="fa fa-edit"></i></button>
+                        </div>
+                    </div>
+            </main>
+
+            <!------------sidebar---------------->
+            <aside class="sidebar"><div class="aside"><p class="title-Aside"> People you may know </p>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>ali ahmadi</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>sara ahmadi</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>mohammad rezaei</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>reza amiri</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>masoud jalali</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>yousef asadi</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>danial yavari</p></a></div>
+<!----------------------------other users-->
+                <span class="other-User" style="display: none; opacity: 0; flex-direction: column; align-items: center;">
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>fateme hoseinzade</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>ali sadeghi</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>hossein ahmadi</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>hassan yazdani</p></a></div>
+                <button class="btn-User-Aside"><img src="images/user.png" alt="myPicture"></button>
+                <div><a href="#"><p>amir kalali</p></a></div>
+                <button class="showless"><p class="show-User" >show Less <i class="fa fa-angle-up"></i></p></button>
+                </span>
+                <button class="show-more-users"><p class="show-User">show More <i class="fa fa-angle-down"></i></p></button>
+            </div></aside>
+        </section>
+
+
+
+<!------------footer------------->
+        <section id="footer">
+            <footer>
+                <div class="footer">
+                <div class="links-Footer">
+                    <a href="#"><i class="fa fa-university"></i><p> About us</p></a>
+                  <a href="#"><i class="fa fa-instagram"></i><p> Instagram</p></a>
+                  <a href="#"><i class="fa fa-facebook"></i><p>facebook</p></a>
+                </div>
+            </div>
+        </footer>
+        </section>
+       
+   
+    
+        <script src="script.js"></script>
+    </body>
+</html>

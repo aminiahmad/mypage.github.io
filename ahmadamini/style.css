@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+body{
+background-color: rgba(221, 220, 220, 0.712);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+
+}
+
+header{
+    height: 65px;
+    position:fixed;
+    background:#ffffff;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(105, 105, 105);
+    z-index: 1;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    width: 100% ;
+} 
+header div#main-Header  div {
+    
+    display: flex;
+    align-items: center;
+}
+
+header div div #linkedin-Logo{
+    width: 3rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-left: 25px;
+
+}
+header div div #search{
+    border:0;
+    border-radius: 4px;
+    background-color: rgba(196, 227, 240, 0.849);
+    width: 10rem;
+    height: 2.3rem;
+    color: rgba(49, 49, 49, 0.801);
+    padding: 10px 10px 10px 27px;
+    transition: all 1s ease-out;
+    
+}
+.nav-Link{
+    width: 90%;
+}
+.search-Box{ margin-left: 15px;
+    width: 30%;}
+header div div #search:focus{
+   outline-style: solid;
+   outline-color: rgb(241, 241, 241);
+   width: 17rem;
+}
+
+.icon-Search{
+    position: absolute;
+    font-weight: bold;
+    font-style: normal;
+    color: rgba(32, 32, 32, 0.644);
+    opacity: 0.7;
+    padding: 10px;
+}
+.icon-Search:hover{
+    opacity: 1;
+}
+
+#nav-Header{
+    width: 60%;
+    height: 4rem;
+    display: flex;}
+#nav-Header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#nav-Header ul .li-nav{
+    text-align: center;
+    font-size: small;
+    margin-left: 25px;
+    color: rgb(88, 88, 88);
+}
+#nav-Header ul li a:hover{
+    color: black;
+}
+#container{
+    display: flex;
+    width: 100%;
+}
+main.main-Page{
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-Profile{
+   background: #ffffff;
+   background-image: url(images/background.jpg);
+   width:50rem;
+   height: 10rem;
+   border-radius: 7px;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   margin: 85px 10px 0px 70px;
+}
+button.btn-Camera{
+    border: 0;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 1rem;
+}
+div.information-me{
+    background: #ffffff;
+    width:50rem;
+    height: 10rem;
+    border-radius: 7px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    margin: 0px 10px 5px 70px;
+}
+div.about-Me{
+    background: #ffffff;
+    width:50rem;
+    /* height: 8rem; */
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    margin: 5px 10px 5px 70px;
+    font-weight: bold;
+    flex-direction: column;
+}
+div.about-Me p{
+    margin-left: 15px;
+    margin-top: 25px; 
+}
+
+div.education-Me p{
+    margin-left: 10px;
+    margin-top: 25px; 
+}
+.edit-Remove-Btn{
+    width: 46rem;
+    height: 4rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;  
+    align-self: flex-end;
+}
+.btn-E{
+    border: 0;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    
+}
+.btn-E:hover{
+    background-color: rgba(172, 172, 172, 0.527);
+}
+.educ-skill-lang{
+    background: #ffffff;
+    width:50rem;
+    /* height: 11rem; */
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    margin: 5px 10px 5px 70px;
+    font-weight: bold;
+    flex-direction: column;
+}
+div.skills p{
+    margin-left: 13px;
+    margin-top: 25px; 
+}
+div.Languages p{
+    margin-left: 13px;
+    margin-top: 25px; 
+}
+
+aside{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+div.aside
+{
+    transition: all 0.1s ease-in-out;
+    background: #ffffff;
+    width:17rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 85px 10px 0px 5px;
+    font-weight: bold;
+    align-items: center;
+
+}
+div.aside p.title-Aside{
+    margin: 25px 0px 0px 13px;
+}
+button.btn-User-Aside{
+    border: 0;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+    margin:30px 5px 10px 20px;
+}
+button.show-more-users,button.showless {
+    border:0;
+    border-top: 1px;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
+    background-color: rgb(252, 252, 252);
+    width: 17rem;
+    height: 2.7rem;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+button.show-more-users p{
+    margin-bottom: 5px;
+}
+button.show-more-users:hover,button.showless:hover{
+    background-color: rgb(243, 242, 242);
+    color: rgb(29, 28, 28);
+    border-color:rgb(223, 220, 220);
+}
+section#footer{display: flex;
+    width: 100%;}
+footer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer{background: #ffffff;
+    width:69rem;
+    height: 14rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin: 5px 10px 30px 70px;
+    font-weight: bold;
+}
+div.links-Footer{
+    width: 20rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid rgba(128, 128, 128, 0.575);
+
+}
+div.links-Footer a{
+    padding: 5px;
+    margin: 5px;
+    transition: all 0.3s ease-in;
+
+}
+div.links-Footer a:hover{
+ color: #474646;
+
+}
+div.myAccount-de{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-300vh);
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 10rem;
+    height: 5rem;
+    transition: all 0.5s ease-in;
+    box-shadow: 0px 0px 5px 0px rgb(105, 105, 105);   
+}
+button.my-Account-btn{
+    width: 2.7rem;
+    height: 2.7rem;
+border: 0;
+border-radius: 7px;
+background-color: #ffffff;
+cursor: pointer;
+transition: all 0.6s ease-in;
+}
+button.my-Account-btn:hover{
+    background-color: #dbdbdb;    
+}
+.backdrop {
+    display: none;
+    background-color: rgba(173, 173, 173, 0.4);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.edite-About-Me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-400vh);
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.5s ease-in;
+    box-shadow: 0px 0px 5px 0px rgb(105, 105, 105);
+    overflow-x: auto;
+   
+}
+.edite-About-Me textarea{
+    max-width: 25rem;
+    max-height: 10rem;
+    direction: rtl;
+}
+.edite-Education{ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-500vh);
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.5s ease-in;
+    box-shadow: 0px 0px 5px 0px rgb(105, 105, 105);
+    /* overflow-x: auto; */
+}
+.edite-Education input.text{
+    border: 0;
+    outline: 0;
+    background-color: rgba(145, 187, 189, 0.521);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+}
+div.edit-Lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-800vh);
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 80%;
+    transition: all 0.5s ease-in;
+    box-shadow: 0px 0px 5px 0px rgb(105, 105, 105);
+}
+.btn-l{
+    border: 0;
+    background-color: rgb(253, 253, 253);
+    border-radius: 7px;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+.btn-l:hover{
+    background-color: rgba(172, 172, 172, 0.527);
+   
+}
